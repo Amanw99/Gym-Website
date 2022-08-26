@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		body{
+			background-color: #8FFF40;
+		}
+		.heading{
+			font-size: 40px;
+			text-align: center;
+			color: #9D00FF;
+		}
+
+		#table1{
+			border: 1px;
+			font-size: 20px;
+			border-color: grey;
+			background-color: #8FFF40;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="heading">Form learning</h1>
+	<form action="register.jsp" method="post">
+	<table align="center" id="table1">
+		<tr>
+			<td>Enter Name :</td>
+			<td>
+				<input type="text" name="username" placeholder="Enter name">
+			</td>
+		</tr>
+		<tr>
+			<td>Enter Password :</td>
+			<td>
+				<input type="password" name="password" placeholder="Enter password">
+			</td>
+		</tr>
+		<tr>
+			<td>Enter Gender</td>
+			<td>
+				<input type="radio" name="gender">Male <input type="radio" name="gender">Female
+			</td>
+		</tr>
+		<tr>
+			<td>Enter Address</td>
+			<td>
+				<textarea name="address" rows="8"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>Enter courses</td>
+			<td>
+				 <select name="courses">
+				 	<option value="java">Java programming</option>
+				 	<option value="python">Pyhton programming</option>
+				 	<option value="andriod">Andriod programming</option>
+				 	<option value="html">HTML programming</option>
+				 	<option value="clan">C programming</option>
+				 </select>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="checkbox"> Accept terms and conditions 
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<button type="submit"> Submit</button>
+				<button type="reset">Reset</button>
+			</td>
+		</tr>
+	</table>
+	</form>
+
+</body>
+</html>

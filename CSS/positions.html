@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Css positions property</title>
+	<style>
+		.container{
+			background-color: lightcoral;
+			height: 3444px;
+		}
+		.box{
+			display: inline-block;
+			border: 2px solid green;
+			width: 100px;
+			height: 100px;
+		}
+		/*#box3{
+			position: relative;
+			top: 20px;
+			left: 20px;
+		}*/
+
+		/*Sticky - the element will stick to its position  */
+
+		#box3{
+            position: sticky;
+            top: 4px;
+		}
+
+		/*Fixed- the element will fixed to its relative position*/
+
+		#box4{
+			position: fixed;
+			right: 10px;
+			bottom: 4px;
+		}
+		
+	</style>
+</head>
+<body><div class="container">
+	<div class="box" id="box1">1</div>
+	<div class="box" id="box2">2</div>
+	<div class="box" id="box3">3</div>
+	<div class="box" id="box4">4</div>
+</div>
+
+</body>
+</html>

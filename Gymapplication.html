@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gym Application</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0px;
+			padding: 0px;
+			background: url(image/gymback.jpg);
+			height: 713px;
+		}
+		.left{
+			color: whitesmoke;
+			margin: 11px 13px;
+			/*border: 1px solid white;*/
+			display: inline-block;
+			position: relative;
+			left: 20px;
+		}
+		.Menu{
+			/*border: 1px solid white;*/
+			display: inline-block;
+			position: absolute;
+			right: 30px;
+			justify-content: center;
+		}
+		.logo{
+			width: 56px;
+			/*position: relative;
+			top: 5px;*/
+		}
+		li{
+			position: sticky;
+			padding: 10px 31px;
+			display: inline-block;
+			float: left;
+			font-family: Cambria,Georgia,serif;
+		}
+		a{
+			cursor: pointer;
+			color: white;
+			font-size: 20px;
+			text-decoration: none;
+		}
+		a:hover {
+			cursor: pointer;
+			color: yellow;
+			text-decoration: overline;
+		}
+		.para{
+			color: white;
+			margin: 50px 39px;
+			margin-right: 880px;
+			margin-left: 80px;
+			margin-bottom: 90px;
+		}
+		.heading{
+			font-size: 63px;
+		font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+		}
+		p{
+			position: relative;
+			top: 30px;
+			font-size: 15px;
+			font-family:  Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;;
+		}
+		.btn{
+			font-family: monospace;
+			border-radius: 25px;
+			margin: 46px 109px;
+			padding: 10px ;
+			border: 2px solid yellow;
+			color: white;
+			background-color: black;
+		}
+		.btn:hover{
+			/*border: 2px solid lightyellow;*/
+			color: black;
+			cursor: pointer;
+			background-color: yellow;
+		
+		}
+		.section2{
+			border: 2px solid greenyellow;
+			background-color: white;
+			height: 700px;
+		}
+		.item{
+			/*border: 2px solid rebeccapurple;*/
+			padding: 31px;
+		}
+
+		#item1{
+			background-color: white;	
+		}
+
+		.courses{
+			margin: 10px 20px;
+			padding: 10px 20px;
+			font-family:Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+			font-size: 30px;
+		}
+		.box{
+			border: 2px solid blue;
+			height: 100px;
+			/*margin: 10px 10px;*/
+			width: 200px;
+			height: 500px;
+		}
+		.cardio{
+			background: url('image/gymproject/cardio.jpg');
+			height: 300px;
+			background-size: auto;
+			background-repeat-x: no-repeat;
+			padding: 2px 3px;
+			background-color: white;
+			background-position: right;
+		    margin-bottom: -30px;
+
+		}
+		.weightlifting{
+			background: url('image/gymproject/weightlifting.jpg');
+			height: 300px;
+			background-size: auto;
+			background-repeat-x: no-repeat;
+			/*padding: 2px 3px;*/
+			background-color: white;
+			background-position: left;
+		    margin-bottom: -30px;
+		}
+		.boxing{
+			background: url('image/gymproject/boxing.jpg');
+			height: 300px;
+			background-size: auto;
+			background-repeat-x: no-repeat;
+			/*padding: 2px 3px;*/
+			background-color: white;
+			background-position: right;
+		    margin-bottom: -30px;
+		}
+		.bodybuilding{
+			background: url('image/gymproject/bodybuilding.jpg');
+			height: 300px;
+			background-size: auto;
+			background-repeat-x: no-repeat;
+			/*padding: 2px 3px;*/
+			background-color: white;
+			background-position: left;
+			margin-bottom: -30px;
+		}
+		.cardiotext{
+			font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+			font-size: 30px;
+			text-align: center;
+			right: 327px;
+       		top: 97px;
+       		border: 2px solid yellow;
+   			margin: 0px 500px;
+    		padding: 10px
+
+		}.weightlifttext{
+			font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+			font-size: 30px;
+			text-align: center;
+			left: 328px;
+    		top: 122px;
+    		border: 2px solid yellow;
+   			margin: 0px 500px;
+    		padding: 10px
+
+		}
+		.boxingtext{
+			font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+			font-size: 30px;
+			text-align: center;
+			right: 327px;
+    		top: 126px;
+    		border: 2px solid yellow;
+   			margin: 0px 500px;
+    		padding: 10px
+
+		}
+		.bodybuildingtext{
+			font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+			font-size: 30px;
+			text-align: center;
+			left: 328px;
+    		top: 122px;
+    		border: 2px solid yellow;
+   			margin: 0px 500px;
+    		padding: 10px
+		}
+		.footer{
+			background-color: black;
+			color: blue;
+			height: 400px;
+		}
+		.lastpanel{
+			/*border: 2px solid darkred;*/
+			height: 400px;
+			width: 50%;
+			float: left;
+			display: inline-block;
+		}
+		.last{
+			color: white;
+			font-family:Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+			font-size:40px ;
+			margin-left: 116px;
+		}
+		.timing{
+			color: whitesmoke;
+			font-family:Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+			/*font-weight: bold;*/
+			/*word-spacing: 1px;*/
+		    font-size: 18px;
+   			margin-left: 118px;
+    		margin-top: 0px;
+		}
+		.address{
+			color: whitesmoke;
+			font-family:Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+			/*font-weight: bold;*/
+		    font-size: 18px;
+		    /*word-spacing: 2px;*/
+		    margin-left: 118px;
+    		margin-top: 56px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="left">
+		<img src="image/barbell.png" class="logo">
+	</div>
+	<div class="Menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact us</a></li>
+		</ul>
+		<br>
+	</div>
+	<div class="para">
+		<p class="heading">	IT'S ALL ABOUT WHAT YOU CAN ACHIEVE	</p>
+		<p>Empower yourself to make the changes you need to make</p>
+		<button class="btn">LET'S GET STARTED</button>
+	</div>
+	<br>
+		<div class="item" id="item1">
+		 <strong class="courses">POPULAR CLASSES</strong>
+		</div>
+		<div class="cardio">
+			<p class="cardiotext">Cardio</p>
+		</div>
+		<div class="weightlifting">
+			<p class="weightlifttext">Weight-Lifting</p>
+		</div>
+		<div class="boxing">
+			<p class="boxingtext">Boxing</p>
+		</div>
+		<div class="bodybuilding">
+			<p class="bodybuildingtext">BodyBuilding</p>
+		</div>
+		<br>
+		<div class="footer">
+			<div class="lastpanel" id="lastpanel1">
+				<p class="last">WORKING HOURS</p>
+				<br>
+				<p class="timing">Monday - Friday 5:00 AM - 12:00 AM
+					<br>
+					Sunday - Saturday 8:00 AM - 10:00 PM
+				</p>
+			</div>
+			<div class="lastpanel" id="lastpanel2">
+				<p class="last">ADDRESS
+					<br>
+					<p class="address">
+						Near Regal Celebration
+						<br>
+						Nagpur, 440017.
+					</p>
+				</p>
+			</div>
+		</div>
+</body>
+</html>
